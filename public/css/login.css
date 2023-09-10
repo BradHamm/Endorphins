@@ -8,11 +8,12 @@
 /* Login background */
 .login-card{
     position: absolute;
-    right: 30%;
+    right: 39vw;
     bottom: 40%;
     box-sizing: border-box;
     padding: 40px;
     width: 400px;
+    height: 400px;
 }
 
 .login-card-body {
@@ -23,33 +24,13 @@
 .login-card-body input {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #fff;
     outline: none;
     background: var(--lite-blu);
     cursor: pointer;
-}
-
-.login-card-body label {
-    position: absolute;
-    top: 20px;
-    left: 140px;
-    padding: 10px 0;
-    font-size: 16px;
-    color: #fff;
-    pointer-events: none;
-    transition: .5s;
-}
-
-.login-card-body input:focus ~ label,
-.login-card-body input:valid ~ label {
-    top: -20px;
-    left: 120px;
-    color: #f5ebeb;
-    font-size: 12px;
 }
 
 .create-title {
@@ -58,14 +39,6 @@
     color: white;
     font-weight: bold;
     text-align: center;
-}
-
-.sign-in {
-    display: block;
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 200px;
 }
 
 .login-popup-stuff:not(.button-container) {
@@ -86,4 +59,27 @@
     position: absolute; 
     right: 0; 
     bottom: 10px;
+}
+
+input::placeholder {
+    position: absolute;
+    top: 8px;
+    left: auto;
+    transition: all 0.3s ease;
+    color: aliceblue;
+    text-align: center;
+}
+  
+input:focus::placeholder {
+    top: -20px;
+    font-size: 10px;
+}
+
+.login-title {
+    margin-top: 40px;
+    color: var(--dark-blu);
+}
+
+.signup-card {
+    margin-bottom: auto !important;
 }

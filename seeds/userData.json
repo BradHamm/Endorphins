@@ -1,23 +1,27 @@
 [
   {
-    "username": "Sal",
-    "password": "password12345", 
-    "bio": "Bio for Sal",
-    "tagScore": {},
-    "currentFriends": []
+    "name": "itsa-me-dea",
+    "email": "itsaemail@gmail.com",
+    "password": "password12345"
   },
   {
-    "username": "Lernantino",
-    "password": "password12345",
-    "bio": "Bio for Lernantino",
-    "tagScore": {},
-    "currentFriends": []
+    "name": "JoaquinGodina0",
+    "email": "joaquingodina0@gmail.com",
+    "password": "password12345"
   },
   {
-    "username": "Amiko",
-    "password": "password12345", 
-    "bio": "Bio for Amiko",
-    "tagScore": {},
-    "currentFriends": []
+    "name": "BradHamm",
+    "email": "bradhamm@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Neta2393",
+    "email": "neta2393@gmail.com",
+    "password": "password12345"
+  },
+  {
+    "name": "Lernantino",
+    "email": "lernantino@gmail.com",
+    "password": "password12345"
   }
 ]

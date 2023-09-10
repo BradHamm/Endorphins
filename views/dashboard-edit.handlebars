@@ -1,0 +1,27 @@
+<div class="row mt-4 post mid-blu">
+  <div class="col-md-12">
+    <h3 class="text-white">Edit Post:</h3>
+
+    {{!-- Post form to be editted --}}
+    <form class="form edit-post-form">
+      {{!-- Post title --}}
+      <div class="form-group">
+        <label for="post-name" class="text-white">Title:</label>
+        <input class="form-input" type="text" id="post-name" name="post-name" value="{{name}}"/>
+      </div>
+      
+      {{!-- Post description --}}
+      <div class="form-group">
+        <label for="post-desc" class="text-white">Description:</label>
+        <textarea class="form-input" id="post-desc" name="post-desc">{{description}}</textarea>
+      </div>
+
+      {{!-- Update button --}}
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-update dark-blu" data-id="{{id}}">Update</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="/js/dashboard-edit.js"></script>

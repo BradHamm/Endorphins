@@ -1,108 +1,184 @@
 :root {
-    --dark-blu: #070f4e;
-    --mid-blu: #2772db;
-    --lite-blu: #3ab1c8;
-    --not-blu: #f5ebeb;
+  --dark-blu: #070f4e;
+  --mid-blu: #2772db;
+  --lite-blu: #3ab1c8;
+  --not-blu: #f5ebeb;
 }
 
 * {
-    font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: "Roboto Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  color: aliceblue;
 }
 
 .dark-blu { 
-	background: var(--dark-blu); 
+background: var(--dark-blu); 
 }
-	
+
 .mid-blu { 
-	background: var(--mid-blu); 
+background: var(--mid-blu); 
 }
 
 .lite-blu { 
-	background: var(--lite-blu); 
+background: var(--lite-blu); 
 }
 
 .not-blu { 
-	background: var(--not-blu); 
+background: var(--not-blu); 
 }
 
 .nav-link {
-    color: white;
+  color: white;
+}
+
+.nav-link:not(.welcome-card):hover {
+  color: var(--dark-blu) !important;
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--lite-blu) !important;
+}
+
+p:not(.card-text, .post-card p) {
+  color: black;
+  margin-bottom: auto;
+}
+
+h2 a {
+  color: #bae3e9;
+}
+
+.post, .login-card, .signup-card, .dashboard-stuff, .comment-card, .post-card, .my-nav {
+  border-radius: 10px;
+}
+
+.login-card, .signup-card, .dashboard-stuff, .comment-card, .post-card {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.post-card {
+  margin-bottom: 20px;
+}
+
+.post div {
+  padding-top: 10px;
+}
+
+.no-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: #1b89bc;
+  text-decoration: none;
+  font-size: 100%;
+}
+
+.no-button:hover {
+  color: #065b83;
+  text-decoration: underline;
 }
 
 .search {
-    border: var(--lite-blu);
+  border: var(--lite-blu);
 }
 
 .search:hover {
-    background: var(--mid-blu);
+  background: var(--mid-blu);
 }
 
 .post-link {
-    color: var(--dark-blu);
+  color: var(--dark-blu);
+}
+
+.post-title:hover {
+  color: white !important;
 }
 
 /* title stuff */
 .title-body{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .title-container{
-    position: relative;
+  position: relative;
 }
 
 .text_hide{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: var(--dark-blu);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--dark-blu);
 }
 
 .text_cursor{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    border-left: 3px solid white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  border-left: 3px solid white;
 }
 
 .friends-title {
-    margin: auto;
-    padding: auto;
+  margin: auto;
+  padding: auto;
+}
+
+.friend-nav {
+  height: 40px !important;
+}
+
+/* this needs to be fixed once user list is implement into handlebar */
+.friend-card {
+  height: 125px !important;
 }
 
 /* add friends overlay */
 .close-popup {
-    display: none;
+  display: none;
 }
 
 .open-popup {
-    position: fixed;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-    cursor: pointer;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
 }
 
 .popup-stuff {
-    position: fixed;
-    width: 75%;
-    top: 35vh;
-    left: 12.5%;
+  position: fixed;
+  width: 75%;
+  top: 35vh;
+  left: 12.5%;
 
 }
 
 .popup-close-button {
-    position: fixed;
-    top: 30vh;
-    right: 12.5%;
+  position: fixed;
+  top: 30vh;
+  right: 12.5%;
+}
+
+i, h2 a {
+  color: #065b83;
+}
+
+.main-nav {
+  width: 100%;
+}
+
+body {
+  width: 100%;
 }

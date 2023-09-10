@@ -1,3 +1,2 @@
-DROP DATABASE IF EXISTS forum_db;
-
-CREATE DATABASE forum_db;
+DROP DATABASE IF EXISTS endorfins_db;
+CREATE DATABASE endorfins_db;

@@ -1,104 +1,63 @@
-<!-- Loop over each object in the projects array -->
-{{!-- {{#each projects as |project| }}
-<div class="row mb-4 project">
-  <div class="col-md-5">
-    <h2>
-      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-      {{{get_emoji}}}
-      <a href="/project/{{project.id}}">{{project.name}}</a>
-    </h2>
-    <p>
-      <span for="img" aria-label="money">💲</span>
-      <!-- Pass needed_funding value to the helper function -->
-      <span class="dollar-amount">{{format_amount project.needed_funding}}</span>
-      needed!
-    </p>
-    <p>Created by {{project.user.name}} on {{format_date project.date_created}}</p>
-  </div>
-  <div class="col-md-7">
-    <p>
-      {{project.description}}
-    </p>
-  </div>
-</div>
-{{/each}} --}}
-
 <!-- HOMEPAGE STUFF -->
-    <div class="row">
-        <!-- nav sidebar -->
-        <nav class="card nav flex-column col-4 ml-4 mt-2 lite-blu">
-        <ul class="nav nav-pills flex-column">
+<div class="row">
+  <!-- nav sidebar -->
+  <nav class="card nav flex-column col-4 lite-blu my-nav">
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item">
+        <h5 class="card-title ml-3 mt-3">Current Posts</h5>
+      </li>
+      {{#each posts as |post| }}
+      <li class="nav-item">
+        <a class="nav-link" href="/post/{{post.id}}">{{post.name}}</a>
+      </li>
+      {{/each}}           
+    </ul>
+  </nav>
+
+  <!-- welcome card -->
+  <div class="flex-column col">
+    <div class="flex-column col">
+      <div class="row post card mid-blu text-white">
+        <div class="card-body p-4 welcome-card">
+          <h5 class="card-title">Hello!</h5>
+          <p class="card-text welcome-text">Welcome to Endorfins!
+          This website was designed with you in mind. How do we know? Hmmmmm... Probably because you clicked and wanted to see more. Endorfins is a way for people to connect with shared interests and thoughts. Share with family, friends, strangers or strangers that become family and friends. You can read blog posts about hobbies and interests that you currently enjoy or are getting into. Want to read about the best sandwhich in San Diego look no further. And before you go... Dont forget to sign up. We hope you enjoy!</p>
+          <ul class="card-text">
             <li class="nav-item">
-                <h5 class="card-title ml-3 mt-3">What Are We Reading This Week?</h5>
+              <a class="nav-link" href="https://github.com/joaquingodina0">Joaquin Godina</a>
             </li>
             <li class="nav-item">
-                  <a class="nav-link" href="https://www.theblogstarter.com/?msclkid=7c3713fa1d881ed8f66677411e99d8f7">How to Blog for Beginners</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://chrisguillebeau.com/lifestyle-design-and-your-ideal-world">Design Blog</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://tropicalmba.com/articles/what-i-learned-by-quitting-carbs/">What I Learned By Quitting Carbs</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://sunsetspm.com/best-sandwich-shops-in-san-diego/#:~:text=Best%20Sandwich%20Shops%20in%20San%20Diego%201%20K,fill%20you%20up.%20...%203%20Rubicon%20Deli%20">Best Sandwichs in San Diego</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://www.boston.com/culture/movie-reviews/2023/07/19/oppenheimer-is-a-towering-triumph-of-filmmaking/#:~:text=The%20movie%20is%20an%20incredible%20achievement%2C%20and%20might,Test.%20But%20%E2%80%9COppenheimer%E2%80%9D%20is%20also%20quiet%20and%20understated.">Oppenheimer Review</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://lovesweatfitness.com/blog/">Best Fitness Blog</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://letsreachsuccess.com/be-adaptive/">How To Be Adaptive</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://www.hipstersanddragons.com/">Dungeons and Dragons</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="https://www.figma.com/file/oMlb5Jj8pJiLTYDtSE79Dw/Endorphins---Project-Two-(Endor)?type=whiteboard&node-id=49-796&t=60cvfnedwJWVNMle-0">Endorfins Figma Board</a>
-              </li>
-            </ul>
-        </nav>
-
-        <!-- welcome card -->
-        <div class="flex-column col mt-2 mr-2">
-            <div class="card mid-blu text-white">
-                <div class="card-body">
-                    <h5 class="card-title">Hello!</h5>
-                    <p class="card-text">Welcome to Endorfins!
-                        This website was designed with you in mind. How do we know? Hmmmmm... Probably because you clicked and wanted to see more. Endorfins is a way for people to connect with shared interests and thoughts. Share with family, friends, strangers or strangers that become family and friends. You can read blog posts about hobbies and interests that you currently enjoy or are getting into. Want to read about the best sandwhich in San Diego look no further. And before you go... Dont forget to sign up. We hope you enjoy!</p>
-                        <ul class="card-text">
-                          <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/joaquingodina0">Joaquin Godina</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="https://github.com/BradHamm">Braden Hamm</a>
-                          </li>
-                          <li class="nav-item">
-                              <a class="nav-link" href="https://github.com/itsa-me-dea">Nhadea Lensky</a>
-                          </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="https://github.com/neta2393">Benethea Hardin</a>
-                          </li>
-                        </ul>
-                    <!-- <a href="#" class="btn btn-primary">Celebrate</a> -->
-                </div>
-            </div>
-
-        <!-- suggested posts card -->
-           
-<div class="card mt-2 not-blu">
-    <div class="card-body">
-        <input type="text" class="form-control mb-2" id="postTitle" placeholder="Enter Post Title">
-        <textarea class="form-control mb-2" id="postContent" placeholder="Add Post Content"></textarea>
-        <button class="btn btn-outline-secondary bg-primary text-white" id="savePostButton">Save Post</button>
-        <div class="mt-3">
-            <h5 id="savedPostTitle"></h5>
-            <p id="savedPostContent"></p>
+              <a class="nav-link" href="https://github.com/BradHamm">Braden Hamm</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/itsa-me-dea">Nhadea Lensky</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/neta2393">Benethea Hardin</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-</div>
-               
-</div>
+
+    <!-- Loop over each object in the posts array to create list of all posts -->
+    {{#each posts as |post| }}
+    <div class="flex-column col">
+      <div class="row post card not-blu">
+        <div class="col-md-5 card-body p-3">
+          <h2>
+            <i class="fa-solid fa-code"></i>
+            <a href="/post/{{post.id}}">{{post.name}}</a>
+          </h2>
+          <p>Created by {{post.user.name}} on {{format_date post.date_created}}</p>
+        </div>
+        <div class="col-md-7">
+          <p>
+            {{post.description}}
+          </p>
+        </div>
+      </div>
+    </div>
+    {{/each}}          
+  </div>
 </div>

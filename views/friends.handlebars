@@ -1,118 +1,118 @@
 <!-- FRIENDS PORTION -->
-    <div class="row">
-        <!-- welcome card -->
-        <div class="flex-column col mt-2 mr-2 ml-2">
-            <div class="card mid-blu text-white">
-                <div class="card-body">
-                    <div class="row">
-                        <!-- friends title -->
-                        <h5 class="col friends-title ">Friends</h5>
+<div class="row">
+  <!-- friends nav -->
+  <div class="flex-column col mt-2 mr-2 ml-2">
+    <div class="card mid-blu text-white">
+      <div class="card-body">
+        <div class="row friend-nav">
+          <!-- friends title -->
+          <h5 class="col friends-title">Friends</h5>
 
-                        <!-- friends list options -->
-                        <ul class="nav justify-content-end col-sm-8 col-lg-4">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">All</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Online</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Pending</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Blocked</a>
-                            </li>
-                            <li class="nav-item">
-                              <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit" onclick="openPopup()">Add Friend</button>
-                            </li>
-                          </ul>
-
-                    </div>
-                </div>
-            </div>
-
-            <!-- Friends Search -->
-            <div class="card mid-blu mt-2">
-              <div class="card-body">
-                <form class="form-inline row mr-1 ml-1">
-                  <input class="form-control mr-sm-2 col" type="search" placeholder="Search Friends" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-            
-
-        <!-- friends list section -->
-            <div class="card mt-2 dark-blu">
-                <div class="card-body">
-                  
-                  <!-- indiviual friend -->
-                  <div class="card not-blu">
-                    <div class="card-body">
-                      <div class="row">
-                        <!-- friends name -->
-                        <p class="col friends-title"><i class="fa-solid fa-user fa-2xl"></i> <a href="#" class="text-dark">itsa-me-dea</a></p>
-                        <!-- friends options -->
-                        <ul class="nav justify-content-end col-sm-8 col-lg-4">
-                          <li class="nav-item">
-                            <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit" href="#">Message</button>
-                          </li>
-                          <li class="nav-item ml-2">
-                            <div class="dropdown">
-                              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
-                                <a class="dropdown-item" href="#">Remove</a>
-                                <a class="dropdown-item" href="#">Block</a>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-        </div>
-    </div>      
-
-    <!-- ADD FRIENDS POPUP -->
-      <div class="close-popup" id="popup">
-      
-        <div class="popup-stuff">
-          <!-- Friends Search -->
-          <div class="card mid-blu mt-2">
-            <div class="card-body">
-              <form class="form-inline row mr-1 ml-1">
-                <input class="form-control mr-sm-2 col" type="search" placeholder="Search Friends" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit">Search</button>
-              </form>
-            </div>
-          </div>
-
-          <!-- friends list section -->
-              <div class="card mt-2 dark-blu">
-                  <div class="card-body">
-                    
-                    <!-- indiviual friend -->
-                    <div class="card not-blu">
-                      <div class="card-body">
-                        <div class="row">
-                          <!-- friends name -->
-                          <p class="col friends-title"><i class="fa-solid fa-user fa-2xl"></i> <a href="#" class="text-dark">itsa-me-dea</a></p>
-                          <!-- friends options -->
-                          <ul class="nav justify-content-end col">
-                            <li class="nav-item">
-                              <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit" href="#"><b>+</b></button>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-  
-              <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search popup-close-button" type="button" onclick="closePopup()">✖</button>
-
+          <!-- friends list options -->
+          <ul class="nav justify-content-end col-sm-8 col-lg-8">
+            <li class="nav-item">
+              <a class="nav-link" href="#">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Online</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pending</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blocked</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit" onclick="openPopup()">Add Friend</butto>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
+
+    <!-- Friends Search -->
+    <div class="card mid-blu">
+      <div class="card-body">
+        <form class="form-inline row mr-1 ml-1">
+          <input class="form-control mr-sm-2 col" type="search" placeholder="Search Friends" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+
+    <!-- friends list section -->
+    <div class="card dark-blu">
+      <div class="card-body friend-card">
+
+        <!-- indiviual friend -->
+        <div class="card not-blu">
+          <div class="card-body">
+            <div class="row">
+            
+              <!-- friends name -->
+              <p class="col friends-title"><i class="fa-solid fa-user fa-2xl"></i> <a href="#" class="text-dark">itsa-me-dea</a></p>
+              
+              <!-- friends options -->
+              <ul class="nav justify-content-end col-sm-8 col-lg-4">
+                <li class="nav-item">
+                  <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit" href="#">Message</button>
+                </li>
+                <li class="nav-item ml-2">
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                      <a class="dropdown-item" href="#">Remove</a>
+                      <a class="dropdown-item" href="#">Block</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>      
+
+<!-- ADD FRIENDS POPUP -->
+<div class="close-popup" id="popup">
+  <div class="popup-stuff">
+
+    <!-- Friends Search -->
+    <div class="card mid-blu mt-2">
+      <div class="card-body">
+        <form class="form-inline row mr-1 ml-1">
+          <input class="form-control mr-sm-2 col" type="search" placeholder="Search Friends" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- friends list section -->
+    <div class="card mt-2 dark-blu">
+      <div class="card-body">
+
+        <!-- indiviual friend -->
+        <div class="card not-blu">
+          <div class="card-body">
+            <div class="row">
+
+              <!-- friends name -->
+              <p class="col friends-title"><i class="fa-solid fa-user fa-2xl"></i> <a href="#" class="text-dark">itsa-me-dea</a></p>
+
+              <!-- friends options -->
+              <ul class="nav justify-content-end col">
+                <li class="nav-item">
+                  <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search" type="submit" href="#"><b>+</b></button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-outline-success my-2 my-sm-0 lite-blu text-white search popup-close-button" type="button" onclick="closePopup()">✖</button>
+  </div>
+</div>
